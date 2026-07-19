@@ -16,9 +16,12 @@ A firm appears under **Recommended** when:
   A firm with none recorded is never recommended, however suitable it is.
 - **It hasn't already been called for this internship.** Once you log a call
   against this internship, the firm drops off the list so nobody calls twice.
+  Calls against *other* internships don't exclude it.
+- **It isn't marked Don't Contact Us**, and hasn't been deactivated.
 
-Everything else — history, rating, how recently you spoke — affects the *order*,
-not whether it appears.
+Ordering is then: firms whose fields match, cold streaks pushed down, and the
+firm's rating for this internship. How recently you spoke is shown but isn't
+sorted on.
 
 Firms that don't qualify aren't hidden. Switch to **All firms** and search by
 name, contact, workplace, field of expertise or address.
@@ -33,11 +36,15 @@ A firm has to fail **both** checks to count as a cold streak:
 
 | Check | Default | What it means |
 |---|---|---|
-| **Lookback window** | 24 months | How far back to look for a positive answer. A firm with an **Intern approved** call inside this window stays warm. |
+| **Lookback window** | 24 months | How far back to look. A firm with an **Intern Approved** call inside this window stays warm. |
 | **Calls before silence counts** | 5 lifetime calls | How many times you must have tried before silence means anything. |
 
-Silence alone is never a streak. A firm you've called twice with no result just
-hasn't been properly tried yet.
+Two things follow that aren't obvious:
+
+- **A firm you haven't called at all recently is not cold.** The check only looks
+  at calls inside the window; a firm with none there is stale, not a streak.
+- **Silence alone is never a streak.** A firm you've called twice with no result
+  hasn't been properly tried yet.
 
 ## Tuning it
 
@@ -62,15 +69,14 @@ you adjust them, so you can see the effect before saving.
 ## Troubleshooting
 
 **"No recommended firms — they're all already called or no FOE matches."**
-Either every suitable firm has been called for this internship, or none of your
-firms carry a matching field of expertise. Use **All firms** to search directly,
-and fill in fields of expertise on the firms you use — see
-[Manage a host firm](/how-to/manage-a-host-firm).
+Every suitable firm has been called for this internship, none carry a matching
+field of expertise, or the remainder are marked Don't Contact Us. Use **All
+firms** to search directly.
 
 **A firm you place with every year is marked as a cold streak.**
-Its last positive call is older than the lookback window. If the arrangement is
-real but predates Minto, log the call that secured it — see
-[Log a recruitment call](/how-to/log-a-recruitment-call).
+You've called it inside the lookback window without a positive outcome, and it's
+over the lifetime-call threshold. Logging the call that actually secured the
+placement — with **Intern Approved** — clears it.
 
 **A firm keeps reappearing after you've called it.**
 The call wasn't logged. Only a recorded call removes a firm from the list.

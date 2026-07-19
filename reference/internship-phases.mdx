@@ -28,39 +28,48 @@ more and less.
 | Change the planned number of interns | ✓ | — | — |
 | Connect or remove a host firm | ✓ | — | — |
 | Remove an intern, change an assignment | ✓ | — | — |
-| Add an intern | ✓ | ✓ | — |
+| Change the internship's fields of expertise | ✓ | — | — |
+| Add an intern | ✓ | up to the planned count | — |
+| Set the sending organization | — | ✓ | — |
 | Add buddies and companions | — | ✓ | — |
 | Manage meal and transport tickets | — | ✓ | — |
-| Notes, watchers, renaming | ✓ | ✓ | ✓ |
+| Language courses and safety passes | — | ✓ | — |
+| Arrival and departure dates | ✓ | ✓ | ✓ |
+| Notes, watchers, renaming, status, deleting | ✓ | ✓ | ✓ |
 
 <Warning>
 Two consequences catch people out:
 
 - **You can't add a buddy or companion until the internship is approved.** While
   it's still Requested, those actions fail.
-- **You can't connect a firm or change the planned count once it is approved.**
-  Approving fixes the shape of the internship.
+- **You can't connect a firm, assign interns, or change the planned count once
+  it is approved.** Approving fixes the shape of the internship.
 
 So approve when the placement is genuinely agreed — not early to unblock
 something, and not late.
+
+Nothing in the app is greyed out to tell you this. An action that isn't allowed
+in the current phase looks available and fails when you save, usually as a
+generic error.
 </Warning>
 
-## Expired internships are frozen
+## Expired internships are mostly frozen
 
 An internship still **Requested** whose dates have passed becomes **Expired**,
-and Expired counts as Closed. You can't edit its dates, roster, firms or
-modules — which is awkward, because fixing the dates is exactly what you want
-to do.
+and Expired counts as Closed. Its roster, firms and modules are frozen.
 
-Change the status first: set it back to **To be rescheduled**, which returns the
-internship to Setup, then fix the dates.
+Arrival and departure dates are the exception — those stay editable in every
+phase, so you can correct the travel dates without changing anything else. To
+reopen the rest, set the status back to **To Be Rescheduled**, which returns the
+internship to Setup.
 
 ## Where the boundaries come from
 
 Phases are worked out from the stored status plus the dates, the same way the
 [calculated statuses](/reference/internship-statuses) are:
 
-- An approved or prepared internship whose end date has passed is **Closed**.
+- An approved or prepared internship with **both** dates set, whose end date has
+  passed, is **Closed**. With only one date it stays Active.
 - A requested internship whose start or end date has passed is **Closed**
   (shown as Expired).
 - Everything else approved or prepared is **Active**.

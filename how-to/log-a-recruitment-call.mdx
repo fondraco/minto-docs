@@ -47,7 +47,7 @@ to be assigned to it.
     saves someone a wasted call.
   </Step>
   <Step title="If they agreed, record how many places">
-    Set the number of students the firm accepted.
+    Under **Workplaces**, set how many students each site accepted.
 
     This is the step that matters. A number above zero connects the firm to the
     internship, so it becomes available when you assign interns. Leave it at
@@ -60,16 +60,19 @@ to be assigned to it.
 
 ## Recording places
 
-Places can only be recorded against the outcome **Intern approved** — it's the
-only positive outcome, and Minto rejects a number of places on any other with
-*"Outcome must have subgroup GOOD when students are accepted."*
+Places are entered **per workplace**, and only against the outcome **Intern
+Approved** — the only positive outcome. On any other the inputs are disabled,
+with *"Accepted students can only be set for positive outcomes."*
 
-That constraint is deliberate. "Interested" and "They don't know yet" are
-encouraging, but nobody has committed to anything, so there's nothing to connect
-a firm for yet. Call them back and log a second call when they decide.
+<Warning>
+A firm with no workplaces recorded has nowhere to enter a number, so a call can
+never connect it. If a firm has agreed to take interns, add a workplace first —
+see [Manage a host firm](/how-to/manage-a-host-firm).
+</Warning>
 
-One call can cover several internships. If you pitch a firm on two groups in the
-same conversation, record places against each — the firm gets connected to both.
+The constraint on outcomes is deliberate: "They Don't Know Yet" is encouraging,
+but nobody has committed, so there's nothing to connect a firm for yet. Log a
+second call when they decide.
 
 ## Outcomes
 
@@ -78,14 +81,13 @@ whether you can record places.
 
 | Outcome | Use it when | Can record places |
 |---|---|:---:|
-| **Intern approved** | They've agreed to take students. | ✓ |
-| **Interested** | Positive, but not committed yet. | — |
-| **They don't know yet** | They need time to decide internally. | — |
-| **Call later** | Right firm, wrong moment — they asked you to try again. | — |
-| **E-mail — didn't respond yet** | You've written and are waiting. | — |
+| **Intern Approved** | They've agreed to take students. | ✓ |
+| **They Don't Know Yet** | They need time to decide internally. | — |
+| **Call Later** | Right firm, wrong moment — they asked you to try again. | — |
+| **E-mail - Didn't Respond Yet** | You've written and are waiting. | — |
 | **Unavailable** | Couldn't reach anyone. | — |
-| **Intern rejected** | They looked and said no. | — |
-| **Don't contact us** | They've asked to be left alone. Respect it. | — |
+| **Intern Rejected** | They looked and said no. | — |
+| **Don't Contact Us** | They've asked to be left alone. This one also stops the firm being recommended. | — |
 
 ## Why a firm is recommended
 
@@ -96,9 +98,8 @@ A firm with no fields of expertise recorded will never be recommended, however
 suitable it is. That's the main reason to fill them in when you add a firm — see
 [Add a host firm](/how-to/add-a-host-firm).
 
-Your organization can also tune how firms are ranked under **Settings** >
-**Firm call policy**, which controls how long a firm counts as "recently called"
-and how many calls make it heavily contacted.
+A Firm Admin can tune how firms are ranked under **Settings** > **Firm call
+policy** — see [How firms get recommended](/reference/firm-recommendations).
 
 ## See every call
 
@@ -123,14 +124,13 @@ have fields of expertise recorded. Switch to **All firms** to search directly.
 Nobody logged the call. Recommendations only exclude firms with a call recorded
 against this internship — a call made and not logged is invisible.
 
-**"Outcome must have subgroup GOOD when students are accepted."**
-You've recorded places against an outcome other than **Intern approved**. Either
-change the outcome, or set the places back to zero if they haven't actually
-committed.
+**"Accepted students can only be set for positive outcomes."**
+The number of places is only editable on **Intern Approved**. Change the outcome
+if they really did commit.
 
 **A firm agreed but doesn't appear when assigning interns.**
-The call recorded the outcome but not a number of places. Only places above zero
-connect the firm. Edit the call and set how many they agreed to.
+Either the call recorded no places, or the firm has no workplaces so there was
+nowhere to enter them. Add a workplace to the firm, then edit the call.
 
 **"At least one target (internship) is required."**
 The call isn't attached to an internship. Start from the internship's **Calls**
