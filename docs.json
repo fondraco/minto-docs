@@ -34,7 +34,8 @@
         "icon": "building-2",
         "expanded": true,
         "pages": [
-          "how-to/add-a-host-firm"
+          "how-to/add-a-host-firm",
+          "how-to/connect-a-sending-organization"
         ]
       },
       {
@@ -42,7 +43,9 @@
         "icon": "graduation-cap",
         "expanded": true,
         "pages": [
-          "how-to/create-an-internship"
+          "how-to/create-an-internship",
+          "how-to/add-interns-to-an-internship",
+          "how-to/place-an-intern-with-a-firm"
         ]
       },
       {
