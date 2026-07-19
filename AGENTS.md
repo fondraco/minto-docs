@@ -121,6 +121,11 @@ also means screenshot rot is a cosmetic problem rather than a correctness one.
   dotnet run --project Minto.Api -- seed-docs
   pnpm --dir Minto/minto-web run docs:shots
   ```
+- To find out whether the product has drifted away from the committed
+  screenshots, run the same thing with `docs:shots:check`. It captures to a
+  temporary directory, compares, and names the pages that embed anything that
+  moved — so you learn which pages to reread, not just that pixels changed. It
+  exits non-zero on drift, so it can gate a merge.
 - Wrap in `<Frame>` with a caption. Click-to-zoom is on by default, so a tightly
   cropped image is still readable.
 - **Alt text**: 155 characters or fewer, names the screen and what's being
