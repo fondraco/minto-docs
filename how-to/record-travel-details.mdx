@@ -13,9 +13,10 @@ flight and leaving on dates still to be confirmed is a perfectly normal state.
 
 ## Before you begin
 
-- Every role can edit travel details.
-- The internship needs the Travel module turned on. If **Travel** isn't in the
-  internship's section list, add it from **Unused Modules**.
+- Any role can edit travel details.
+- The internship needs the Travel module turned on. It usually is by default;
+  if **Travel** isn't in the section list, add it from **Unused Modules** —
+  possible only while the internship is in **Setup**.
 
 ## Record the arrival
 
@@ -32,8 +33,9 @@ flight and leaving on dates still to be confirmed is a perfectly normal state.
     Select **Station** and choose the airport, station or terminal.
   </Step>
   <Step title="Optional: add the connection number">
-    Select **Connection number** and enter the flight, train or coach number.
-    It's what anyone meeting the group will actually look up.
+    Select **Flight number** — or **Train number** or **Bus number**, depending
+    on the station you picked — and enter it. It's what anyone meeting the group
+    will actually look up.
   </Step>
   <Step title="Optional: arrange a greeter">
     Select **Greeter** if someone from your team is meeting the group, and
@@ -58,24 +60,22 @@ Setting an arrival date does more than fill in a field.
   the preliminary window with a `~` in front of it. Once arrival and departure
   are set, those exact dates are used instead.
 - **The status can change on its own.** An approved internship whose arrival
-  date has passed shows as **Running**, and one whose departure date has passed
-  shows as **Finished**. See
+  date has passed shows as **Running**. It shows as **Finished** once the
+  departure date has passed — but only if both dates are set. See
   [Internship statuses](/reference/internship-statuses).
 
 That's the reason to record travel as soon as it's booked rather than at the end
 — several other screens read from it.
 
-## Statuses
-
-Each of arrival and departure carries its own status: **To do**, **In progress**
-or **Done**. Use it to track your own preparation, separately from whether the
-dates are known.
-
 ## Turning the module off
 
-If an internship doesn't need travel tracked at all, select **Module actions**
-on the arrival or departure card and disable it. It moves to **Unused Modules**
-and stops counting towards the internship's progress.
+If an internship doesn't need travel tracked, open the **⋮** menu on the arrival
+or departure card and select **Disable Arrival** or **Disable Departure**.
+
+Two caveats. Modules can only be changed while the internship is in **Setup** —
+once approved they're fixed. And disabling arrival or departure *lowers* the
+internship's total progress rather than removing it from the calculation, so
+don't disable them to tidy up a percentage.
 
 ## Troubleshooting
 
@@ -83,6 +83,6 @@ and stops counting towards the internship's progress.
 Stations are shared across all of Minto rather than being yours alone. Add the
 one you need and it'll be available from then on.
 
-**The internship still shows a `~` before its dates.**
-The preliminary window is still being used because arrival or departure has no
-date yet. Both need one before the dates read as firm.
+**One date has a `~` and the other doesn't.**
+That's normal — the two ends are independent. Each shows its preliminary value,
+in amber, until that end has a real date.

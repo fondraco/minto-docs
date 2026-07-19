@@ -15,8 +15,8 @@ Each recipient at the firm gets their own URL, so you can see who looked at what
 - Your plan must include **intern share links**. If the option isn't there, it's
   a plan limit, not your role — any Firm Admin can check under **Settings** >
   **Billing**.
-- The host firm must already exist, with at least one contact person to send the
-  link to.
+- The host firm must already exist and have at least one active employee to
+  send the link to.
 - The internship needs interns who aren't placed yet. A link with nothing to show
   is no use to the firm.
 
@@ -42,15 +42,20 @@ Each recipient at the firm gets their own URL, so you can see who looked at what
     - **All currently unassigned** keeps itself up to date. Interns drop off the
       moment they're placed, and newly added unplaced interns appear on their
       own. You don't have to re-share.
-    - **Pick specific interns** freezes the list. Only the interns you choose
-      stay visible, even after assignments change.
+    - **Pick specific interns** fixes the shortlist. Nobody new is ever added
+      to it.
 
-    Prefer the first unless you have a reason to show a fixed shortlist —
-    otherwise you'll be re-sending links every time the roster moves.
+    Either way, an intern disappears from the link once they're placed —
+    "pick specific" freezes *which* interns can appear, not whether a placed one
+    stays visible. Prefer the first unless you have a reason to show a shortlist.
   </Step>
   <Step title="Set an expiry">
-    Choose **7d**, **14d**, or **30d**, or pick a date. The default comes from
-    your organization's share link settings.
+    Choose one of the presets or pick a date. If the internship has a start
+    date you'll also see **Until start**, and any preset landing on or after
+    that start is hidden — so close to departure the only choices may be **7d**
+    and **Until start**.
+
+    The default comes from your organization's share link settings.
   </Step>
   <Step title="Optional: add a note">
     Under **Note**, write a message for the recipients. Markdown works, and
@@ -86,10 +91,12 @@ You can change this under **Settings** > **Share links**:
 | **Off** (default) | Requests stay pending until a colleague approves them. Safer — you keep the final say on every placement. |
 | **On** | The intern is assigned to the firm as soon as the recipient submits. Faster for firms you trust, but there's no review step. |
 
-Switching auto-approve on only affects new requests. Anything already pending
-stays pending until you handle it.
+Auto-approve is a single organization-wide setting read at the moment a
+recipient submits — not something fixed per link. Switching it on makes every
+existing link auto-approve from then on, including ones sent months ago.
+Requests already pending stay pending until you handle them.
 
-<Frame caption="Share link defaults apply to new links only — changing them doesn't alter links already sent.">
+<Frame caption="Default expiry pre-fills new links. Auto-approve is live and applies to every link, including ones already sent.">
   <img
     src="/images/screens/settings-share-links.png"
     alt="The share links settings page showing default expiry in days and the auto-approve recipient requests option."
@@ -102,8 +109,9 @@ stays pending until you handle it.
 Every intern on this internship is already placed. Add more interns, or use
 **Pick specific interns** if you want to show someone who's already assigned.
 
-**The recipient list is empty.**
-The firm has no contact people recorded. Add a contact to the firm first.
+**"No active employees on this firm."**
+Nobody at the firm is recorded, or everyone recorded has been deactivated. Add
+someone to the firm first.
 
 **A recipient says their link has stopped working.**
 It's expired or been revoked. Expiry is fixed when the link is created —
@@ -111,5 +119,6 @@ changing your default expiry later doesn't extend links already sent. Create a
 new one.
 
 **You want to stop sharing early.**
-Revoke the link. Recipients lose access immediately, and any pending requests
-stay in Minto for you to deal with.
+Revoke the link. Recipients lose access immediately. Pending requests stay on
+file but can no longer be approved — only rejected — so handle anything
+outstanding before revoking.

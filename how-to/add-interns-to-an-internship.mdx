@@ -5,16 +5,19 @@ last_reviewed: 2026-07-19
 ---
 
 Adding an intern puts them on the internship's roster. It doesn't place them
-anywhere yet — that's a separate step once you have host firms connected.
+anywhere yet — that comes once a host firm has agreed to take someone.
 
 Interns aren't created on their own. There's no "new intern" action on the
 Interns page; you always add them from inside an internship.
 
 ## Before you begin
 
-- You need the **Coordinator** or **Firm Admin** role.
-- The internship must have room. An internship with a planned count of 3 stops
-  accepting interns at 3.
+- Any role can add interns.
+- The internship must be in **Setup** or **Active** — that is, not Finished,
+  Expired or Rejected. See
+  [What you can change, and when](/reference/internship-phases).
+- If the internship is already **Approved**, it must have room. Before approval
+  the roster is open.
 
 ## Add an intern
 
@@ -29,22 +32,37 @@ Interns page; you always add them from inside an internship.
     Select **Add Intern**.
   </Step>
   <Step title="Enter their details">
-    Enter **First Name** and **Last Name**. **Email** is optional.
+    Enter **First Name** and **Last Name**. **Email** is optional, but one of
+    last name or email is required.
 
-    As you type, Minto suggests interns you already have. If the student has
-    travelled with you before, choose them from the suggestions rather than
-    creating a duplicate.
+    Minto suggests interns you already have as you type. Choosing one fills in
+    the details for you — see the note below on what it doesn't do.
   </Step>
   <Step title="Save">
     Select **Create New**.
   </Step>
 </Steps>
 
+## Every add creates a new intern record
+
+This surprises people, and it's deliberate.
+
+Choosing someone from the suggestions **prefills the form**. It does not reuse
+that person's record — a fresh intern is created either way. Intern records
+aren't shared or matched by email, so the same student travelling with you twice
+is two records.
+
+That's a privacy decision rather than an oversight: matching on email would let
+one organization discover whether another had a given student on its books.
+
+In practice, don't worry about "duplicates" in the way you would elsewhere. Two
+records for the same person across two internships is the normal state.
+
 ## Result
 
 The intern appears on the **Interns** tab, and the counter goes up — `Interns
 (3 / 3)` means three of three planned places are taken. Their status stays
-unassigned until you place them with a host firm.
+unassigned until a firm has agreed to take them.
 
 <Frame caption="The Interns & Firms section, with all three interns placed at host firms.">
   <img
@@ -53,19 +71,36 @@ unassigned until you place them with a host firm.
   />
 </Frame>
 
+## Adding to an approved internship uses a seat
+
+Once an internship is approved, each intern you add consumes one of your plan's
+intern seats for the current period. Before approval, adding costs nothing.
+
 ## Troubleshooting
 
 **Add Intern is greyed out.**
-The roster is full — the counter reads `(3 / 3)` or similar. Raise the planned
-number of interns on the internship, or remove someone first.
+The roster is at the planned count — the counter reads `(3 / 3)` or similar.
+Raise the planned number of interns, which is only possible while the internship
+is still in **Setup**.
 
-**The same student appears twice.**
-They were created fresh instead of picked from the suggestions. Remove the
-duplicate from the roster with the **✕** at the end of the row, then add them
-again and choose the existing record.
+**"Cannot add more interns: this internship is at its planned count of 3."**
+The same limit, from the server. It applies only to approved internships.
+
+**"Cannot add interns to an approved internship without a planned count."**
+The internship was approved without a planned number. Set one before approving —
+after approval you can't change it.
+
+**"Seat cap reached: 5/5 interns approved this period."**
+Your plan's intern seats for this period are used up. A Firm Admin can check
+usage under **Settings** > **Billing**.
+
+**You need to remove someone.**
+Removal only works while the internship is in **Setup**. On an approved
+internship the ✕ won't work — set the status back to **To be rescheduled**
+first.
 
 ## Next
 
-<Card title="Place an intern with a host firm" icon="building-2" href="/how-to/place-an-intern-with-a-firm">
-  Interns on the roster still need somewhere to work.
+<Card title="Log a recruitment call" icon="phone" href="/how-to/log-a-recruitment-call">
+  Interns on the roster need a firm that has agreed to take them.
 </Card>

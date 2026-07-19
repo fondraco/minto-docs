@@ -20,8 +20,8 @@ the rest of these guides much easier to follow.
     many internships.
   </Card>
   <Card title="Sending organization" icon="school">
-    The school or agency abroad that sends you students. Connected to you by a
-    code, so you both see the same internships.
+    The school or agency abroad that sends you students. Linked to you by a
+    six-character code.
   </Card>
   <Card title="Internship" icon="graduation-cap">
     One group of interns, travelling for one period, placed at host firms. This
@@ -31,9 +31,8 @@ the rest of these guides much easier to follow.
 
 ## How they connect
 
-An internship is where the other three meet. It has one sending organization,
-a group of interns from that organization, and each intern is placed at a host
-firm.
+An internship is where the other three meet. It usually has a sending
+organization, a group of interns, and a host firm for each of them.
 
 ```mermaid
 flowchart LR
@@ -79,10 +78,16 @@ route.
 Adding an intern to an internship puts them on the roster. It doesn't place
 them anywhere yet — they still need a host firm that has agreed to take them.
 
-The internships list makes this distinction visible. **Assigned** counts interns
-who have a host firm; **Approved** counts placements the firm has confirmed.
-An internship reading 1/3 assigned has three interns on the roster and one of
-them placed.
+The internships list makes this distinction visible. Both columns count against
+the **planned** number of interns, not the roster:
+
+- **Approved** — places host firms have agreed to take, from your recruitment
+  calls.
+- **Assigned** — interns actually given a firm.
+
+So `1/3` means one of three planned, and the roster might hold none, one or
+three. Approved running ahead of Assigned is the normal state: firms have said
+yes, and you haven't allocated the students yet.
 
 <Frame caption="The internships list. Assigned shows placement progress — 3/3 is fully placed, 0/4 has nobody placed yet.">
   <img

@@ -4,10 +4,16 @@ description: "What each role can do, and why a colleague might not see a page yo
 last_reviewed: 2026-07-19
 ---
 
-Everyone in your organization has one role. Roles gate **administrative**
-actions — settings, billing, employees. Day-to-day work is open to everyone.
+Roles gate **administrative** actions — settings, billing, employees. Day-to-day
+work is open to everyone.
 
-## The three roles
+People can hold more than one role. Whoever signs your organization up gets Firm
+Admin and Coordinator together, and you can tick several when inviting.
+
+## The roles
+
+These are the roles for a placement agent. An organization that is also a
+sending organization has a second set — Teacher and Companion — alongside them.
 
 | Role | What it's for |
 |---|---|
@@ -43,10 +49,11 @@ narrowest role still has full day-to-day access.
 | Edit the company profile and settings |
 | Manage billing and the plan |
 | Change share link defaults (expiry, auto-approve) |
-| Add and edit organization branches |
+| Merge duplicate organizations and branches |
 
-If a colleague says one of these pages is missing rather than blocked, their
-role is the reason.
+Two of these are only enforced when saving: a Coordinator can open **Employees**
+and **Share links** and read what's there, and only hits a refusal on save. So
+"I can see the page" doesn't mean "I have the role".
 
 ## Plan limits are not roles
 
@@ -84,8 +91,8 @@ Change the role from **Settings** > **Employees** rather than re-inviting the
 person. Re-inviting an existing colleague doesn't create a second account and
 doesn't change their access.
 
-Changes take effect the next time they sign in. If a colleague still can't reach
-a page after a role change, ask them to sign out and back in.
+The API honours a role change immediately, but the app keeps the old roles until
+the person signs out and back in. Ask them to do that after any change.
 
 <Frame caption="Each colleague's role appears in the Permissions column of the employees list.">
   <img

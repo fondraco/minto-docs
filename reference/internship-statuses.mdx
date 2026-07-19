@@ -16,7 +16,7 @@ explains why a status sometimes appears to change on its own.
 | **Approved** | The internship is agreed and going ahead. |
 | **Prepared** | Everything is arranged — placements, travel and programme are in place. |
 | **Rejected** | The internship won't go ahead. |
-| **To be rescheduled** | Agreed in principle, but the dates need to change. |
+| **To Be Rescheduled** | Agreed in principle, but the dates need to change. |
 
 ## Statuses Minto works out
 
@@ -26,7 +26,7 @@ each time the list is shown, and displays them instead of the stored status.
 | Status | When it appears |
 |---|---|
 | **Running** | The internship is **Approved** or **Prepared**, and the start date has passed. |
-| **Finished** | The internship is **Approved** or **Prepared**, and the end date has passed. |
+| **Finished** | The internship is **Approved** or **Prepared**, and it has *both* a start and an end date, and the end date has passed. |
 | **Expired** | The internship is still **Requested**, and the start or end date has passed. |
 
 Two things follow from this:
@@ -34,8 +34,10 @@ Two things follow from this:
 - **You can't set Running, Finished or Expired.** They appear on their own once
   the dates pass, and disappear if you change the dates back.
 - **Expired is a prompt, not a state.** It means a date passed while the
-  internship was still only requested. Either approve it, reschedule it, or
-  reject it.
+  internship was still only requested. Change the status first — an expired
+  internship is frozen, so you can't fix the dates until you set it back to
+  **To Be Rescheduled**. See
+  [What you can change, and when](/reference/internship-phases).
 
 Exact dates are used when the internship has them. Otherwise Minto falls back to
 the preliminary window, so an internship with only a rough window still becomes
@@ -58,6 +60,12 @@ with nobody placed yet, and the list shows both:
 
 ## Filtering by status
 
-On the internships list, select **Status** to filter. The filter matches the
-status shown, including the calculated ones — so filtering by **Running** finds
-internships currently under way, whatever their stored status is.
+On the internships list, select **Status** to filter.
+
+<Warning>
+The filter works from firm travel dates only. An internship showing **Running**
+or **Finished** because of its *preliminary* window won't be returned by those
+filters, and will still appear under **Approved**. If a filter seems to be
+missing internships you can see, this is why — record the arrival and departure
+dates and the filter catches up.
+</Warning>

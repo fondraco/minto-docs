@@ -16,7 +16,11 @@
     "eyebrows": "breadcrumbs"
   },
   "contextual": {
-    "options": ["copy", "view", "assistant"]
+    "options": [
+      "copy",
+      "view",
+      "assistant"
+    ]
   },
   "navigation": {
     "groups": [
@@ -65,6 +69,7 @@
         "icon": "book-open",
         "pages": [
           "reference/internship-statuses",
+          "reference/internship-phases",
           "reference/roles-and-permissions"
         ]
       }
