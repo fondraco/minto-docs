@@ -68,6 +68,13 @@
         ]
       },
       {
+        "group": "For host firms",
+        "icon": "handshake",
+        "pages": [
+          "for-firms/review-shared-candidates"
+        ]
+      },
+      {
         "group": "Reference",
         "icon": "book-open",
         "pages": [
