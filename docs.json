@@ -39,6 +39,7 @@
         "expanded": true,
         "pages": [
           "how-to/add-a-host-firm",
+          "how-to/manage-a-host-firm",
           "how-to/connect-a-sending-organization"
         ]
       },
@@ -61,7 +62,9 @@
         "icon": "users",
         "expanded": true,
         "pages": [
-          "how-to/invite-your-team"
+          "how-to/invite-your-team",
+          "how-to/set-up-your-company",
+          "how-to/update-your-account"
         ]
       },
       {
@@ -70,6 +73,7 @@
         "pages": [
           "reference/internship-statuses",
           "reference/internship-phases",
+          "reference/firm-recommendations",
           "reference/roles-and-permissions"
         ]
       }

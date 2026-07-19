@@ -1,0 +1,76 @@
+---
+title: "How firms get recommended"
+description: "Why a firm appears under Recommended, why one you'd expect is missing, and how to tune it."
+last_reviewed: 2026-07-19
+---
+
+When you log a call, the firm picker offers a **Recommended** list rather than
+all your firms. Understanding what drives it saves a lot of "why isn't this
+company here?"
+
+## What gets a firm recommended
+
+A firm appears under **Recommended** when:
+
+- **Its fields of expertise overlap the internship's.** This is the main filter.
+  A firm with none recorded is never recommended, however suitable it is.
+- **It hasn't already been called for this internship.** Once you log a call
+  against this internship, the firm drops off the list so nobody calls twice.
+
+Everything else — history, rating, how recently you spoke — affects the *order*,
+not whether it appears.
+
+Firms that don't qualify aren't hidden. Switch to **All firms** and search by
+name, contact, workplace, field of expertise or address.
+
+## Cold streaks
+
+A firm you've called repeatedly that never says yes gets demoted, marked with a
+snowflake and a **Skip / Cold streak** badge. The point is to stop your team
+working through the same closed doors every season.
+
+A firm has to fail **both** checks to count as a cold streak:
+
+| Check | Default | What it means |
+|---|---|---|
+| **Lookback window** | 24 months | How far back to look for a positive answer. A firm with an **Intern approved** call inside this window stays warm. |
+| **Calls before silence counts** | 5 lifetime calls | How many times you must have tried before silence means anything. |
+
+Silence alone is never a streak. A firm you've called twice with no result just
+hasn't been properly tried yet.
+
+## Tuning it
+
+A Firm Admin can change both numbers under **Settings** > **Firm call policy**.
+The page scores three sample firms against your current settings and updates as
+you adjust them, so you can see the effect before saving.
+
+- **A shorter lookback** (say 12 months) flags firms sooner. Last year's wins
+  still count; the year before doesn't.
+- **A longer lookback** (say 36 months) is more forgiving, and suits longer
+  sales cycles.
+- **Raising the call threshold** only flags firms you've genuinely pushed.
+  Lowering it flags them sooner.
+
+<Frame caption="The firm call policy settings, with a live preview of how three sample firms would be scored.">
+  <img
+    src="/images/screens/settings-firm-call-policy.png"
+    alt="The Minto firm call policy settings showing the lookback window, lifetime call threshold, and a preview of three scored sample firms."
+  />
+</Frame>
+
+## Troubleshooting
+
+**"No recommended firms — they're all already called or no FOE matches."**
+Either every suitable firm has been called for this internship, or none of your
+firms carry a matching field of expertise. Use **All firms** to search directly,
+and fill in fields of expertise on the firms you use — see
+[Manage a host firm](/how-to/manage-a-host-firm).
+
+**A firm you place with every year is marked as a cold streak.**
+Its last positive call is older than the lookback window. If the arrangement is
+real but predates Minto, log the call that secured it — see
+[Log a recruitment call](/how-to/log-a-recruitment-call).
+
+**A firm keeps reappearing after you've called it.**
+The call wasn't logged. Only a recorded call removes a firm from the list.
