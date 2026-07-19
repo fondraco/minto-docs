@@ -4,8 +4,8 @@ description: "What each role can do, and why a colleague might not see a page yo
 last_reviewed: 2026-07-19
 ---
 
-Everyone in your organization has one role. The role decides which pages they
-see and what they can change. This page is the reference for who can do what.
+Everyone in your organization has one role. Roles gate **administrative**
+actions — settings, billing, employees. Day-to-day work is open to everyone.
 
 ## The three roles
 
@@ -18,25 +18,51 @@ see and what they can change. This page is the reference for who can do what.
 Roles are set when you invite someone, and can be changed afterwards from
 **Settings** > **Employees**.
 
-## What each role can do
+## What everyone can do
 
-| Task | Firm Admin | Coordinator | Operations |
-|---|:---:|:---:|:---:|
-| View internships, interns and firms | ✓ | ✓ | ✓ |
-| Create and edit internships | ✓ | ✓ | — |
-| Be assigned as responsible for a placement | ✓ | ✓ | — |
-| Add and edit host firms | ✓ | ✓ | — |
-| Invite colleagues and change roles | ✓ | — | — |
-| Edit company profile and settings | ✓ | — | — |
-| Manage billing and plan | ✓ | — | — |
-| Manage fields of expertise | ✓ | — | — |
-| Manage share links | ✓ | — | — |
+Every role can do the core work. There's no role that only reads.
+
+- View internships, interns, host firms and organizations
+- Create and edit internships
+- Add interns to an internship and place them with host firms
+- Add and edit host firms
+- Connect sending organizations
+- Create, revoke and manage share links, and approve or decline intern requests
 
 <Note>
-Only Firm Admins can manage billing, company settings, employees, fields of
-expertise and share links. If a colleague says a settings page is missing rather
-than blocked, their role is almost always the reason.
+This surprises people who expect Operations staff to be read-only. If you need
+someone who can look but not change, Minto can't express that today — the
+narrowest role still has full day-to-day access.
 </Note>
+
+## What only Firm Admins can do
+
+| Task |
+|---|
+| Invite colleagues and change their roles |
+| Edit the company profile and settings |
+| Manage billing and the plan |
+| Change share link defaults (expiry, auto-approve) |
+| Add and edit organization branches |
+
+If a colleague says one of these pages is missing rather than blocked, their
+role is the reason.
+
+## Plan limits are not roles
+
+Some things are gated by your **plan**, not your role. A Firm Admin on a plan
+without the feature can't do these either:
+
+| Capability | Requires |
+|---|---|
+| Share links | Intern share links |
+| Editing your own fields of expertise | Manage fields of expertise |
+| API tokens | API access |
+| Custom branding | Custom branding |
+
+The difference matters when you're troubleshooting. A **role** problem affects
+one person; a **plan** problem affects everyone in your organization, including
+administrators.
 
 ## Roles outside your organization
 
