@@ -4,15 +4,21 @@ description: "Record calls to host firms so the team can see who's been approach
 last_reviewed: 2026-07-19
 ---
 
-Recruitment calls are how you find host firms for an internship's interns.
-Logging each one keeps the team from calling the same company twice, and builds
-the history Minto uses to suggest which firms to try next.
+Recruitment calls are how you find host firms for an internship's interns. This
+is where placement actually begins — you call companies until one agrees to take
+students, and the call is where you record that agreement.
+
+Logging a call does more than keep notes. When you record how many places a firm
+agreed to, Minto connects that firm to the internship for you, ready for interns
+to be assigned to it.
 
 ## Before you begin
 
 - Every role can log calls.
-- Open the internship you're recruiting for. Calls are recorded against an
-  internship, not on their own.
+- The firm must already be in your **Firms** list — see
+  [Add a host firm](/how-to/add-a-host-firm).
+- Open the internship you're recruiting for. Every call is recorded against at
+  least one internship; you can't log one on its own.
 
 ## Log a call
 
@@ -40,25 +46,46 @@ the history Minto uses to suggest which firms to try next.
     your colleagues will read before calling this firm again — "wants CVs first"
     saves someone a wasted call.
   </Step>
+  <Step title="If they agreed, record how many places">
+    Set the number of students the firm accepted.
+
+    This is the step that matters. A number above zero connects the firm to the
+    internship, so it becomes available when you assign interns. Leave it at
+    zero and the call is recorded as history only.
+  </Step>
   <Step title="Save it">
     Select **Save**.
   </Step>
 </Steps>
 
+## Recording places
+
+Places can only be recorded against the outcome **Intern approved** — it's the
+only positive outcome, and Minto rejects a number of places on any other with
+*"Outcome must have subgroup GOOD when students are accepted."*
+
+That constraint is deliberate. "Interested" and "They don't know yet" are
+encouraging, but nobody has committed to anything, so there's nothing to connect
+a firm for yet. Call them back and log a second call when they decide.
+
+One call can cover several internships. If you pitch a firm on two groups in the
+same conversation, record places against each — the firm gets connected to both.
+
 ## Outcomes
 
-The outcome drives both the firm's rating and whether it gets recommended again.
+The outcome drives the firm's rating, whether it gets recommended again, and
+whether you can record places.
 
-| Outcome | Use it when |
-|---|---|
-| **Intern approved** | They've agreed to take an intern. |
-| **Interested** | Positive, but not committed yet. |
-| **They don't know yet** | They need time to decide internally. |
-| **Call later** | Right firm, wrong moment — they asked you to try again. |
-| **E-mail — didn't respond yet** | You've written and are waiting. |
-| **Intern rejected** | They looked and said no to this intern. |
-| **Unavailable** | Couldn't reach anyone. |
-| **Don't contact us** | They've asked to be left alone. Respect it — this one stops them being recommended. |
+| Outcome | Use it when | Can record places |
+|---|---|:---:|
+| **Intern approved** | They've agreed to take students. | ✓ |
+| **Interested** | Positive, but not committed yet. | — |
+| **They don't know yet** | They need time to decide internally. | — |
+| **Call later** | Right firm, wrong moment — they asked you to try again. | — |
+| **E-mail — didn't respond yet** | You've written and are waiting. | — |
+| **Unavailable** | Couldn't reach anyone. | — |
+| **Intern rejected** | They looked and said no. | — |
+| **Don't contact us** | They've asked to be left alone. Respect it. | — |
 
 ## Why a firm is recommended
 
@@ -95,3 +122,16 @@ have fields of expertise recorded. Switch to **All firms** to search directly.
 **The same firm keeps coming up.**
 Nobody logged the call. Recommendations only exclude firms with a call recorded
 against this internship — a call made and not logged is invisible.
+
+**"Outcome must have subgroup GOOD when students are accepted."**
+You've recorded places against an outcome other than **Intern approved**. Either
+change the outcome, or set the places back to zero if they haven't actually
+committed.
+
+**A firm agreed but doesn't appear when assigning interns.**
+The call recorded the outcome but not a number of places. Only places above zero
+connect the firm. Edit the call and set how many they agreed to.
+
+**"At least one target (internship) is required."**
+The call isn't attached to an internship. Start from the internship's **Calls**
+section rather than the sidebar, so the target is set for you.
