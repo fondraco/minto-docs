@@ -30,6 +30,7 @@
         "expanded": true,
         "pages": [
           "index",
+          "get-started/create-your-account",
           "get-started/key-concepts"
         ]
       },
