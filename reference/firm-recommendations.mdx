@@ -17,7 +17,7 @@ A firm appears under **Recommended** when:
 - **It hasn't already been called for this internship.** Once you log a call
   against this internship, the firm drops off the list so nobody calls twice.
   Calls against *other* internships don't exclude it.
-- **It isn't marked Don't Contact Us**, and hasn't been deactivated.
+- **It isn't marked Don't Contact**, and hasn't been deactivated.
 
 Ordering is then: firms whose fields match, cold streaks pushed down, and the
 firm's rating for this internship. How recently you spoke is shown but isn't
@@ -41,10 +41,12 @@ A firm has to fail **both** checks to count as a cold streak:
 
 Two things follow that aren't obvious:
 
-- **A firm you haven't called at all recently is not cold.** The check only looks
-  at calls inside the window; a firm with none there is stale, not a streak.
 - **Silence alone is never a streak.** A firm you've called twice with no result
-  hasn't been properly tried yet.
+  hasn't been properly tried yet — it's below the lifetime-call threshold.
+- **A firm with no calls at all inside the window doesn't get the badge**, though
+  it is still sorted downwards if it's over the lifetime threshold. So a firm you
+  called heavily years ago sits low in the list without being labelled a cold
+  streak.
 
 ## Tuning it
 
@@ -59,6 +61,11 @@ you adjust them, so you can see the effect before saving.
 - **Raising the call threshold** only flags firms you've genuinely pushed.
   Lowering it flags them sooner.
 
+<Note>
+The tooltip explaining a cold streak says "in 2 years" whatever you set the
+lookback to. Trust the number on this settings page, not the tooltip.
+</Note>
+
 <Frame caption="The firm call policy settings, with a live preview of how three sample firms would be scored.">
   <img
     src="/images/screens/settings-firm-call-policy.png"
@@ -70,7 +77,7 @@ you adjust them, so you can see the effect before saving.
 
 **"No recommended firms — they're all already called or no FOE matches."**
 Every suitable firm has been called for this internship, none carry a matching
-field of expertise, or the remainder are marked Don't Contact Us. Use **All
+field of expertise, or the remainder are marked **Don't Contact**. Use **All
 firms** to search directly.
 
 **A firm you place with every year is marked as a cold streak.**

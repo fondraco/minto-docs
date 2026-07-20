@@ -4,8 +4,8 @@ description: "Set travel dates, stations and connection numbers so everyone know
 last_reviewed: 2026-07-19
 ---
 
-The Travel module holds when the group arrives and leaves, where they land, and
-who meets them. It's what turns an internship with a rough window into one people
+The Travel section holds when the group arrives and leaves, where they land, and
+who meets them. Arrival and departure are separate modules within it. It's what turns an internship with a rough window into one people
 can plan around.
 
 Arrival and departure are recorded separately, so a group arriving on a booked
@@ -73,9 +73,13 @@ If an internship doesn't need travel tracked, open the **⋮** menu on the arriv
 or departure card and select **Disable Arrival** or **Disable Departure**.
 
 Two caveats. Modules can only be changed while the internship is in **Setup** —
-once approved they're fixed. And disabling arrival or departure *lowers* the
-internship's total progress rather than removing it from the calculation, so
-don't disable them to tidy up a percentage.
+once approved they're fixed.
+
+And disabling doesn't take the leg out of the progress calculation: arrival and
+departure always occupy a slot. It only shrinks what counts as complete down to
+the date alone. So a disabled leg with a date jumps to 100%, and one without a
+date sits at 0% and still drags the total down. Don't disable them to tidy up a
+percentage — it moves in whichever direction the dates happen to fall.
 
 ## Troubleshooting
 

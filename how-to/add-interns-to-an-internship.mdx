@@ -16,8 +16,9 @@ Interns page; you always add them from inside an internship.
 - The internship must be in **Setup** or **Active** — that is, not Finished,
   Expired or Rejected. See
   [What you can change, and when](/reference/internship-phases).
-- If the internship is already **Approved**, it must have room. Before approval
-  the roster is open.
+- The internship must have room. **Add Intern** greys out at the planned count
+  whatever the status; the server only enforces it once the internship is
+  approved.
 
 ## Add an intern
 
@@ -86,11 +87,13 @@ is still in **Setup**.
 **"Cannot add more interns: this internship is at its planned count of 3."**
 The same limit, from the server. It applies only to approved internships.
 
-**"Cannot add interns to an approved internship without a planned count."**
-The internship was approved without a planned number. Set one before approving —
-after approval you can't change it.
+**"Cannot add interns to an approved internship without a planned count. Set a
+planned count before approving."**
+Exactly that — and after approval you can't change it, so the internship has to
+go back to **To Be Rescheduled** first.
 
-**"Seat cap reached: 5/5 interns approved this period."**
+**"Seat cap reached: 5/5 interns approved this period; adding this intern would
+exceed the cap."**
 Your plan's intern seats for this period are used up. A Firm Admin can check
 usage under **Settings** > **Billing**.
 
