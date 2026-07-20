@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "minto-docs",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["-y", "mint@latest", "dev"],
+      "cwd": ".",
+      "port": 3333
+    }
+  ]
+}

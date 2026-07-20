@@ -1,0 +1,79 @@
+---
+title: "What you can change, and when"
+description: "Why some actions stop working once an internship is approved, and others don't work until it is."
+last_reviewed: 2026-07-19
+---
+
+An internship's status doesn't just describe it — it decides what you're allowed
+to change. If an action worked yesterday and refuses today, or a button does
+nothing on one internship and works on another, this is almost always why.
+
+Minto groups the statuses into four phases.
+
+| Phase | Statuses | What it means |
+|---|---|---|
+| **Setup** | Requested, To be rescheduled | Nothing is agreed yet, so the structure is still open. |
+| **Active** | Approved, Prepared, Running | Agreed and being delivered. The shape is fixed; the details are not. |
+| **Closed** | Finished, Expired | A historical record. Frozen. |
+| **Rejected** | Rejected | Not going ahead. Frozen. |
+
+## What each phase allows
+
+The important part is that Setup and Active allow **different** things, not
+more and less.
+
+| Action | Setup | Active | Closed / Rejected |
+|---|:---:|:---:|:---:|
+| Turn modules on or off | ✓ | — | — |
+| Change the planned number of interns | ✓ | — | — |
+| Connect or remove a host firm | ✓ | — | — |
+| Remove an intern, change an assignment | ✓ | — | — |
+| Change the internship's fields of expertise | ✓ | — | — |
+| Add an intern | ✓ | up to the planned count, once approved | — |
+| Set the sending organization | — | ✓ | — |
+| Add buddies and companions | — | ✓ | — |
+| Manage meal and transport tickets | — | ✓ | — |
+| Language courses and safety passes | — | ✓ | — |
+| Arrival and departure dates | ✓ | ✓ | ✓ |
+| Notes, watchers, renaming, status, deleting | ✓ | ✓ | ✓ |
+
+<Warning>
+Two consequences catch people out:
+
+- **You can't add a buddy or companion until the internship is approved.** While
+  it's still Requested, those actions fail.
+- **You can't connect a firm, assign interns, or change the planned count once
+  it is approved.** Approving fixes the shape of the internship.
+
+So approve when the placement is genuinely agreed — not early to unblock
+something, and not late.
+
+Nothing in the app is greyed out to tell you this. An action that isn't allowed
+in the current phase looks available right up until you save, and then explains
+itself — "This action is not allowed once the internship is approved."
+</Warning>
+
+## Expired internships are mostly frozen
+
+An internship still **Requested** whose dates have passed becomes **Expired**,
+and Expired counts as Closed. Its roster, firms and modules are frozen.
+
+Arrival and departure dates are the exception — those stay editable in every
+phase, so you can correct the travel dates without changing anything else. To
+reopen the rest, set the status back to **To Be Rescheduled**, which returns the
+internship to Setup.
+
+## Where the boundaries come from
+
+Phases are worked out from the stored status plus the dates, the same way the
+[calculated statuses](/reference/internship-statuses) are:
+
+- An approved or prepared internship with **both** dates set, whose end date has
+  passed, is **Closed**. With only one date it stays Active.
+- A requested internship whose start or end date has passed is **Closed**
+  (shown as Expired).
+- Everything else approved or prepared is **Active**.
+- Requested and To-be-rescheduled are **Setup**.
+
+Preliminary dates count for this, so an internship with only a rough window
+still freezes once that window has passed.
