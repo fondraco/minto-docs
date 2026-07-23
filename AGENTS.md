@@ -102,6 +102,32 @@ Rules that matter more than the shape:
   reliable source of support tickets.
 - **Cap procedures at about 7 steps.** Longer means splitting the page.
 
+### Reference pages
+
+Reference pages (statuses, phases, roles, how firms are recommended) explain a
+concept rather than walk through a task. They follow a different shape:
+
+- **Title is a noun phrase** naming the thing explained — "Internship statuses",
+  "Roles and permissions" — not verb-first like a how-to.
+- **No "Before you begin", "Steps", or "Result".** Sections describe facets of
+  the concept, in whatever order reads best.
+- **Explain, don't instruct.** The moment a reference page turns into numbered
+  steps, it's a how-to — move it, and link to it instead.
+- End with **Troubleshooting** only if there are common confusions to clear up.
+
+The style rules and terminology above apply unchanged.
+
+### Templates
+
+Start a new page by copying a template rather than from a blank file, so the
+shape is right by default:
+
+- `templates/how-to.mdx`
+- `templates/reference.mdx`
+
+They live under `templates/` (excluded from the build) and carry the section
+headers plus fill-in guidance. Delete the guidance comments as you write.
+
 ## Screenshots
 
 The governing rule:
