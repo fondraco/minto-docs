@@ -98,5 +98,10 @@
     "metatags": {
       "canonical": "https://myinternshiporganizer.com/docs"
     }
+  },
+  "integrations": {
+    "ga4": {
+      "measurementId": "G-D6YE1G1401"
+    }
   }
 }
