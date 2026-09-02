@@ -91,7 +91,12 @@
     "primary": {
       "type": "button",
       "label": "Open Minto",
-      "href": "https://app.minto.cz"
+      "href": "https://app.myinternshiporganizer.com"
+    }
+  },
+  "seo": {
+    "metatags": {
+      "canonical": "https://myinternshiporganizer.com/docs"
     }
   }
 }
