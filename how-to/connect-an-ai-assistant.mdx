@@ -1,0 +1,106 @@
+---
+title: "Connect an AI assistant"
+description: "Let Claude answer questions about your internships, host firms, interns and calls using your own Minto access"
+last_reviewed: 2026-09-03
+---
+
+Connect Claude to Minto and ask it questions in plain language — "which internships
+start in October?", "when did we last call Cube IT?", "which interns from Spain have no
+LinkedIn profile?". Claude looks the answers up in Minto with your own access, so it sees
+exactly what you see. Today the connection is read-only; Claude can't change anything.
+
+## Before you begin
+
+- You need a Minto account. Any signed-in user can connect an assistant; Claude gets
+  the same access you have, no more.
+- You need Claude — either [Claude.ai](https://claude.ai) (web or desktop app) or
+  Claude Code in a terminal.
+
+## Create a token
+
+The token is what Claude uses to act as you. Treat it like a password.
+
+<Steps>
+  <Step title="Open your tokens">
+    In the sidebar, select **Settings**, then select **API Tokens**.
+  </Step>
+  <Step title="Start a new token">
+    Select **Generate**.
+  </Step>
+  <Step title="Name it">
+    In **Name**, enter something you'll recognise later, such as "Claude".
+  </Step>
+  <Step title="Choose how long it lives">
+    In **Expires**, choose a period. When it runs out, Claude stops working until you
+    connect again with a new token.
+  </Step>
+  <Step title="Generate and copy it">
+    Select **Generate**, then select **Copy**. The token starts with `mnt_pat_` and is
+    shown only once — if you lose it, generate a new one.
+  </Step>
+</Steps>
+
+## Connect Claude.ai or the Claude desktop app
+
+<Steps>
+  <Step title="Add a connector">
+    In Claude, open **Settings**, select **Connectors**, then select **Add custom
+    connector**.
+  </Step>
+  <Step title="Point it at Minto">
+    In **Name**, enter "Minto". In **URL**, enter
+    `https://mcp.myinternshiporganizer.com`, then select **Add**.
+  </Step>
+  <Step title="Authorize it">
+    Select **Connect** next to the new connector. A page titled **Connect to Minto**
+    opens. Paste your token into **Personal Access Token**, then select **Authorize**.
+  </Step>
+</Steps>
+
+## Connect Claude Code
+
+In a terminal, run the following command with your token in place of `mnt_pat_...`:
+
+```bash
+claude mcp add --transport http minto https://mcp.myinternshiporganizer.com/mcp \
+  --header "Authorization: Bearer mnt_pat_..."
+```
+
+Restart Claude Code. Running `/mcp` lists **minto** as connected.
+
+## Result
+
+Start a new conversation and ask a question about your data. Claude names the Minto
+lookups it uses as it answers — for example **search_internships** or **get_firm**. You
+can refer to things by name: host firms, sending organizations, fields of expertise,
+colleagues and call outcomes all work without any IDs.
+
+Questions that work well:
+
+- "Which internships are approved but have no interns assigned yet?"
+- "List our calls to host firms in Berlin this month and how they went."
+- "Which sending organizations do we work with in the IT field of expertise?"
+
+## Disconnect
+
+To cut Claude's access, revoke the token. In the sidebar, select **Settings**, then
+**API Tokens**, then select **Revoke** on the token. Claude stops working immediately;
+you don't need to change anything on the Claude side.
+
+## Troubleshooting
+
+**"Invalid token. Paste a Minto PAT starting with mnt_pat_..."**
+The Connect to Minto page didn't recognise what you pasted. Copy the whole token,
+including the `mnt_pat_` prefix, with no spaces around it.
+
+**Claude says Minto returned 401.**
+The token has expired or was revoked. Generate a new one and connect again.
+
+**Claude says no host firm, colleague or field of expertise matches a name.**
+Claude asked Minto for a name that doesn't exist as written, and Minto replied with
+the available options. Rephrase using one of them — Claude usually does this on its
+own.
+
+**Claude only sees some of your data.**
+Claude has exactly your access. If you can't open a record in Minto, Claude can't
+read it either.
